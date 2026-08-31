@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "name": "Official JByteMod Plugin Repository",
+  "plugins": [
+    {
+      "id": "de.xbrowniecodez.jbytemod.mcp.McpPlugin",
+      "name": "MCP Server",
+      "version": "1.0.0",
+      "author": "brownie",
+      "description": "Expose JByteMod archives, bytecode editing, analysis, JVM attachment, resources, and call graphs to MCP-compatible AI clients.",
+      "minimumJByteModVersion": "2.11.0",
+      "website": "https://github.com/jbytemod/plugin-mcp",
+      "downloadUrl": "https://github.com/jbytemod/plugin-mcp/releases/download/1.0.0/plugin-mcp-1.0.0.jar",
+      "sha256": "6225f8f124cf9eb4913f5d62a4afbd610633b8b4bc58e85e14fc6187abffeb7e",
+      "fileName": "plugin-mcp-1.0.0.jar"
+    },
+    {
+      "id": "de.xbrowniecodez.jbytemod.discordrpc.DiscordRpcPlugin",
+      "name": "Discord RPC",
+      "version": "1.0.0",
+      "author": "brownie",
+      "description": "Show the open archive, selected class or method, and loading progress through Discord Rich Presence.",
+      "minimumJByteModVersion": "2.11.0",
+      "website": "https://github.com/jbytemod/plugin-discord-rpc",
+      "downloadUrl": "https://github.com/jbytemod/plugin-discord-rpc/releases/download/1.0.0/plugin-discord-rpc-1.0.0.jar",
+      "sha256": "86d31716a91b1631c08d06d56108fb3450560446eb7c1db992009f2a50c11882",
+      "fileName": "plugin-discord-rpc-1.0.0.jar"
+    },
+    {
+      "id": "de.xbrowniecodez.jbytemod.nativedump.NativeModuleDumperPlugin",
+      "name": "Native Module Dumper",
+      "version": "1.0.0",
+      "author": "brownie",
+      "description": "List and dump file-backed native libraries loaded by an attached JVM, with optional MCP tools.",
+      "minimumJByteModVersion": "2.11.0",
+      "website": "https://github.com/jbytemod/plugin-native-module-dumper",
+      "downloadUrl": "https://github.com/jbytemod/plugin-native-module-dumper/releases/download/1.0.0/plugin-native-module-dumper-1.0.0.jar",
+      "sha256": "f8e6f0cbbbd698a6ad7437021e31af2c7693c000a540068ba290349b55050d80",
+      "fileName": "plugin-native-module-dumper-1.0.0.jar"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/jbytemod/plugin-registry/schema.json",
+  "title": "JByteMod Plugin Repository",
+  "type": "object",
+  "required": ["schemaVersion", "name", "plugins"],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "plugins": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/plugin"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "plugin": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "version",
+        "author",
+        "description",
+        "minimumJByteModVersion",
+        "website",
+        "downloadUrl",
+        "sha256",
+        "fileName"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Fully qualified name of the concrete Plugin implementation."
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:[-+][A-Za-z0-9.-]+)?$"
+        },
+        "author": {
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "minimumJByteModVersion": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "website": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "downloadUrl": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{64}$"
+        },
+        "fileName": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9._-]+\\.jar$"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
