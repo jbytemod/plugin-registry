@@ -29,14 +29,14 @@
     {
       "id": "de.xbrowniecodez.jbytemod.nativedump.NativeModuleDumperPlugin",
       "name": "Native Module Dumper",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "brownie",
       "description": "List and dump file-backed native libraries loaded by an attached JVM, with optional MCP tools.",
       "minimumJByteModVersion": "2.11.0",
       "website": "https://github.com/jbytemod/plugin-native-module-dumper",
-      "downloadUrl": "https://github.com/jbytemod/plugin-native-module-dumper/releases/download/1.0.0/plugin-native-module-dumper-1.0.0.jar",
-      "sha256": "f8e6f0cbbbd698a6ad7437021e31af2c7693c000a540068ba290349b55050d80",
-      "fileName": "plugin-native-module-dumper-1.0.0.jar"
+      "downloadUrl": "https://github.com/jbytemod/plugin-native-module-dumper/releases/download/1.0.1/plugin-native-module-dumper-1.0.1.jar",
+      "sha256": "55318615ed08c287122b115fce042c90b45b65d9c70cd0bd05f0f34549c9fc22",
+      "fileName": "plugin-native-module-dumper-1.0.1.jar"
     }
   ]
 }
